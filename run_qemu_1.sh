@@ -1,0 +1,1 @@
+qemu-system-riscv32 -qtest stdio -machine virt -smp 1 -m 128M -bios none -device loader,file=./project/FreeRTOS/Demo/RISC-V_RV32_QEMU_VIRT_GCC/build/gcc/output/RTOSDemo.elf -nographic -s  -qtest unix:qemu-monitor-socket,server,nowait
